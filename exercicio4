@@ -1,0 +1,138 @@
+package exercicio;
+
+import java.util.Scanner;
+
+public class Exercicio {
+
+//calculadora 4 operação basica dois numeros. Usuaario vai informar.
+    //public static int calcIdade(int ano) {
+    //    return 2017 - ano;
+    //}
+    //public static int pedirNumero() {
+    //Scanner entrada = new Scanner (System.in);
+    //  System.out.println("Digite um numero");
+    // int n = entrada.nextInt();
+    // return n;
+    //}
+    public static void main(String[] args) {
+
+        //  System.out.println("Programa 1");
+        // System.out.println("Idade" + calcIdade);
+        calculadora();
+    }
+
+    public static void calculadora() {
+
+        int a = 0;
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Calculadora");
+        System.out.println("--------------------");
+        System.out.println("Digite 1 para Somar");
+        System.out.println("Digite 2 para Subtração");
+        System.out.println("Digite 3 para Multiplicação");
+        System.out.println("Digite 4 para Divisão");
+
+        System.out.println("Digite a opção:");
+        a = entrada.nextInt();
+
+        if (a == 1) {
+
+            somar();
+
+        } else if (a == 2) {
+            subtracao();
+
+        } else if (a == 3) {
+            multiplicacao();
+        } else if (a == 4) {
+            dividir();
+        } else {
+            System.out.println("Fim do Programa");
+
+        }
+
+    }
+
+    public static void somar() {
+
+        int c = 0;
+        int d = 0;
+        int e = 0;
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite um numero inteiro:");
+        c = entrada.nextInt();
+
+        System.out.println("Digite o segundo numero inteiro");
+        d = entrada.nextInt();
+
+        e = c + d;
+
+        System.out.println("Total da soma:" + e);
+
+    }
+
+    public static void subtracao() {
+
+        int c = 0;
+        int d = 0;
+        int e = 0;
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite um numero inteiro:");
+        c = entrada.nextInt();
+
+        System.out.println("Digite o segundo numero inteiro");
+        d = entrada.nextInt();
+
+        e = c - d;
+
+        System.out.println("Total da subtraçãoo:" + e);
+
+    }
+
+    public static void multiplicacao() {
+
+        int c = 0;
+        int d = 0;
+        int e = 0;
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite um numero inteiro:");
+        c = entrada.nextInt();
+
+        System.out.println("Digite o segundo numero inteiro");
+        d = entrada.nextInt();
+
+        e = c * d;
+
+        System.out.println("Total da multiplicacao:" + e);
+
+    }
+
+    public static void dividir() {
+
+        double c = 0;
+        double d = 0;
+        double e = 0;
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite um numero inteiro:");
+        c = entrada.nextInt();
+
+        System.out.println("Digite o segundo numero inteiro");
+        d = entrada.nextInt();
+
+        e = c / d;
+
+        System.out.println("Total da divisão:" + e);
+
+    }
+
+}
